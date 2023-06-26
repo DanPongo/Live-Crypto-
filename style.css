@@ -1,0 +1,82 @@
+body {
+    padding: 20px;
+    background-color: #1b1b1b;
+    color: #f3f3f3;
+}
+
+#reportsSection,
+#aboutSection {
+    display: none;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #f3f3f3;
+    background-color: #2d2d2d;
+    border: 1px solid #3b3b3b;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    background-color: #009688;
+    color: #f3f3f3;
+}
+
+.card {
+    display: inline-block;
+    margin: 1em;
+    background-color: #2d2d2d;
+    color: #f3f3f3;
+    border-color: #3b3b3b;
+    position: relative;
+}
+
+.card-title {
+    color: #f3f3f3;
+}
+
+.card-text {
+    color: #c3c3c3;
+}
+
+.btn-primary {
+    background-color: #009688;
+    border: none;
+}
+
+/* Additional styles for form check position */
+.form-check {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        height: auto;
+        overflow: initial;
+    }
+
+    .developer-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .developer-image {
+        margin-bottom: 1rem;
+    }
+
+    .developer-details {
+        text-align: center;
+    }
+}
