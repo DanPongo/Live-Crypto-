@@ -2,6 +2,7 @@
 
 Crypto Explorer is a user-friendly app for exploring and analyzing various cryptocurrencies. With Crypto Explorer, you can search for specific coins, view detailed information, and keep track of your favorite cryptocurrencies all in one place.
 
+![crypto](https://github.com/DanPongo/Live-Crypto-/assets/106473315/c8a6bc76-36e7-4632-ac13-e2c5ea9f18af)
 
 ## Features
 
