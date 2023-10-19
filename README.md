@@ -83,7 +83,7 @@ $("#coinsContainer").on("click", ".more-info", async function () {
 
 ## Contributing
 
-We welcome contributions to make this project even better! Please read [CONTRIBUTING.md](link_to_contributing_file) for guidelines.
+Im welcome contributions to make this project even better! Please read [CONTRIBUTING.md](link_to_contributing_file) for guidelines.
 
 ## License
 
