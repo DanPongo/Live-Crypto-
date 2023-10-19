@@ -1,9 +1,6 @@
-```markdown
-# Crypto Explorer App
+# Live Crypto 
 
 Crypto Explorer is a user-friendly app for exploring and analyzing various cryptocurrencies. With Crypto Explorer, you can search for specific coins, view detailed information, and keep track of your favorite cryptocurrencies all in one place.
-
-![crypto](https://github.com/DanPongo/Live-Crypto-/assets/106473315/e59c9ea9-07ac-4d65-ad6a-e6977add9184)
 
 
 ## Features
@@ -26,9 +23,6 @@ Before you start, make sure you have the following installed:
 
 1. Clone the repository to your local machine.
 
-```sh
-git clone link_to_your_repository
-```
 
 2. Open the `index.html` file in your web browser.
 
@@ -43,18 +37,18 @@ git clone link_to_your_repository
 
 ### Fetch Data from API
 
-```javascript
+javascript
 async function getJson(url) {
     const response = await fetch(url);
     const json = await response.json();
     return json;
 }
-```
+
 
 ### Search for a Specific Cryptocurrency
 ![crypto2](https://github.com/DanPongo/Live-Crypto-/assets/106473315/e2869337-2209-4a4b-b393-47b56dbe1e5a)
 
-```javascript
+javascript
 $("#searchButton").click(async () => {
     const searchTerm = $("#searchInput").val();
     const coins = await getJson("coins.json");
@@ -67,16 +61,16 @@ $("#searchButton").click(async () => {
         alert("No coin found with that name.");
     }
 });
-```
+
 
 ### View Detailed Information
 
-```javascript
+javascript
 $("#coinsContainer").on("click", ".more-info", async function () {
     const coinId = $(this).attr("id").substring(7);
     await handleMoreInfo(coinId);
 });
-```
+
 
 ## Built With
 
@@ -98,4 +92,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - Thanks to CoinGecko API for providing the cryptocurrency data used in this app.
 - Hat tip to everyone who contributed to this project!
-```
+
