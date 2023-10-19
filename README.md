@@ -51,6 +51,7 @@ async function getJson(url) {
 ```
 
 ### Search for a Specific Cryptocurrency
+![crypto2](https://github.com/DanPongo/Live-Crypto-/assets/106473315/e2869337-2209-4a4b-b393-47b56dbe1e5a)
 
 ```javascript
 $("#searchButton").click(async () => {
