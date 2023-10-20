@@ -4,6 +4,10 @@ Crypto Explorer is a user-friendly app for exploring and analyzing various crypt
 
 ![crypto](https://github.com/DanPongo/Live-Crypto-/assets/106473315/c8a6bc76-36e7-4632-ac13-e2c5ea9f18af)
 
+
+## Demo
+https://danpongo.github.io/Live-Crypto-/
+
 ## Features
 
 - Search for specific cryptocurrencies and view detailed information.
