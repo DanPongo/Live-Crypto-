@@ -1,59 +1,55 @@
-# Live Crypto 
+# Live Crypto
 
-Crypto Explorer is a user-friendly app for exploring and analyzing various cryptocurrencies. With Crypto Explorer, you can search for specific coins, view detailed information, and keep track of your favorite cryptocurrencies all in one place.
+Crypto Explorer is an intuitive platform designed to facilitate the exploration and analysis of a plethora of cryptocurrencies. With this app, users can easily search for specific coins, access comprehensive information, and seamlessly keep track of their preferred cryptocurrencies in one centralized location.
 
 ![crypto](https://github.com/DanPongo/Live-Crypto-/assets/106473315/c8a6bc76-36e7-4632-ac13-e2c5ea9f18af)
 
-
 ## Demo
-https://danpongo.github.io/Live-Crypto-/
+Access the live demo here: [Live Crypto Demo](https://danpongo.github.io/Live-Crypto-/)
 
 ## Features
-
-- Search for specific cryptocurrencies and view detailed information.
-- Add cryptocurrencies to your favorites list for easy access.
-- View live market data for each cryptocurrency.
-- Generate reports for selected cryptocurrencies.
+- Efficient search functionality for locating specific cryptocurrencies and accessing detailed information.
+- Favourites list for streamlined tracking of preferred cryptocurrencies.
+- Real-time market data for each listed cryptocurrency.
+- Capability to generate and access reports for selected cryptocurrencies.
 
 ## Getting Started
 
 ### Prerequisites
+Ensure you have the following prerequisites installed prior to proceeding:
+- An up-to-date web browser.
+- A text editor or Integrated Development Environment (IDE) of your preference.
 
-Before you start, make sure you have the following installed:
-
-- A modern web browser
-- A text editor or IDE of your choice
-
-### Installing
+### Installation
 
 1. Clone the repository to your local machine.
+```
+git clone https://github.com/DanPongo/Live-Crypto-.git
+```
 
-
-2. Open the `index.html` file in your web browser.
+2. Open the `index.html` file in your web browser to launch the app.
 
 ## Usage
-
-- Use the search bar to find specific cryptocurrencies.
-- Click on the "More Info" button to view detailed information about a cryptocurrency.
-- Add cryptocurrencies to your favorites list by clicking the "Select" toggle button.
-- View reports for selected cryptocurrencies in the "Reports" section.
+- Leverage the search bar to locate specific cryptocurrencies.
+- Click on "More Info" to access detailed information about a particular cryptocurrency.
+- Utilize the "Select" toggle button to add cryptocurrencies to your favourites list.
+- Generate and view reports for selected cryptocurrencies under the "Reports" section.
 
 ## Code Examples
 
 ### Fetch Data from API
-
-javascript
+```javascript
 async function getJson(url) {
     const response = await fetch(url);
     const json = await response.json();
     return json;
 }
-
+```
 
 ### Search for a Specific Cryptocurrency
 ![crypto2](https://github.com/DanPongo/Live-Crypto-/assets/106473315/e2869337-2209-4a4b-b393-47b56dbe1e5a)
 
-javascript
+```javascript
 $("#searchButton").click(async () => {
     const searchTerm = $("#searchInput").val();
     const coins = await getJson("coins.json");
@@ -66,19 +62,17 @@ $("#searchButton").click(async () => {
         alert("No coin found with that name.");
     }
 });
-
+```
 
 ### View Detailed Information
-
-javascript
+```javascript
 $("#coinsContainer").on("click", ".more-info", async function () {
     const coinId = $(this).attr("id").substring(7);
     await handleMoreInfo(coinId);
 });
-
+```
 
 ## Built With
-
 - HTML
 - CSS
 - JavaScript
@@ -86,15 +80,11 @@ $("#coinsContainer").on("click", ".more-info", async function () {
 - [CanvasJS](https://canvasjs.com/)
 
 ## Contributing
-
-Im welcome contributions to make this project even better! Please read [CONTRIBUTING.md](link_to_contributing_file) for guidelines.
+Contributions are highly appreciated! Please refer to [CONTRIBUTING.md](link_to_contributing_file) for contribution guidelines.
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License. For more details, see the [LICENSE.md](LICENSE.md) file.
 
 ## Acknowledgments
-
-- Thanks to CoinGecko API for providing the cryptocurrency data used in this app.
-- Hat tip to everyone who contributed to this project!
-
+- A special thanks to CoinGecko API for providing the invaluable cryptocurrency data used in this app.
+- A shoutout to everyone who contributed to the project's success!
